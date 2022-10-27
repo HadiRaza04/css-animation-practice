@@ -1,0 +1,305 @@
+body {
+    
+    /* box-sizing: border-box; */
+    padding: 0%;
+    margin: 0%;
+    height: 100vh;
+    width: 100%;
+    /* opacity: 0.7; */
+}
+.container {
+    width: 100%;
+    
+
+}
+.navbar {
+    width: 100%;
+    height: 100px;
+    /* background: rgb(0, 26, 255); */
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+/* .img {
+    width: 100px;
+    height: 80px;
+    margin: 10px;
+    background-color: #ff3838;
+    opacity: 0.5; 
+    background-repeat: no-repeat;
+}
+.img:hover {
+    width: 100px;
+    height: 80px;
+    margin: 10px;
+    background-color: rgb(196, 192, 192);
+    opacity: 0.5; 
+}
+
+#logo {
+   
+    width: 63%;
+} */
+#links {
+   
+    width: 37%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+/* #links a {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: white;
+    width: 120px;
+    height: 50px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 2px solid orangered; 
+} */
+
+
+
+
+
+
+
+
+.font {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: rgb(8, 8, 8);
+    width: 120px;
+    height: 50px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding: 15px;
+    text-align: center;
+    border: 2px solid orangered; 
+
+}
+.font::after {
+    display: block;
+    position: relative;
+    background: #ff3838;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+    transition: all 0.5s ease 0s;
+    
+}
+.font:hover {
+    color: #030303;
+    transition: all 0.5s ease 0s;
+
+}
+.font:hover:after {
+    transition: all 0.5s ease 0s;
+
+    width: 100%;
+    
+    
+}
+
+
+
+#heading1 {
+    color: antiquewhite;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 48px;
+
+
+    position: absolute;
+    top: 120px;
+    left: 300px;
+    font-size: 50px;
+   
+    color: rgb(0, 0, 0);
+    /* transition: 0.5s; */
+    animation-name: moveToLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+
+@keyframes moveToLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px) ;
+
+    }
+
+    60% {
+        opacity: .3;
+        transform: translateX(-100px) ;
+    }
+
+    80% {
+        transform: translateX(50px) ;
+        opacity: .5;
+
+    }
+
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px)  ;
+
+    }
+}
+#heading1>span {
+    color: #ff3838;
+    font-weight: bolder;
+    text-shadow: #030303;
+}
+.container2 {
+    margin-top: 120px;
+    width: 100%;
+    height: 300px;
+    background: rgb(3, 68, 248);
+    opacity: 0.5;
+    display: flex;
+    flex-direction: row;
+}
+.content {
+    
+    opacity: 1;
+    width: 100%;
+    height: 480px;
+    /* background-color: yellow; */
+    opacity: 1;
+    display: flex;
+    flex-direction: row;
+    
+}
+#card1, #card2, #card3 {
+    width: 250px;
+    height: 320px;
+    background: rgb(3, 68, 248);
+    box-sizing: border-box;
+    margin: auto;
+    padding: 40px;
+    display: none;
+    /* position: absolute; */
+    
+}
+.imgnext {
+    width: 150px;
+    margin-top: 170px;
+    height: 130px;
+    box-sizing: border-box;
+    display: none;
+    position: relative;
+}
+.imgg {
+   
+    margin-right: 500px;
+    width: 100px;
+    height: 100px;
+    
+}
+
+
+.content:hover>.imgnext{
+    animation-name: moveToRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    display: block;
+
+}
+.content:hover>#card1{
+    animation-name: moveToRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    display: block;
+
+}
+.content:hover>#card2{
+    animation-name: moveToRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    display: block;
+
+}
+.content:hover>#card3{
+    animation-name: moveToRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    display: block;
+
+}
+@keyframes moveToRight {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+
+    }
+
+    80% {
+        transform: translateX(-10px);
+
+    }
+
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+
+    }
+}
+
+#card1, #card2, #card3 {
+    padding: 20px;
+    text-align: center;
+}
+h1>span {
+    color:#e21111;
+    
+}
+#xdlogo {
+    width: 30px;
+    height: 30px;
+
+}
+#logopara {
+    color: white;
+}
+#xdlogo1 {
+    width: 120px;
+    height: 50px;
+
+}
+#logopara1 {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
